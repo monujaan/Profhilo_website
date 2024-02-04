@@ -676,24 +676,15 @@ footer strong {
 }
 
 .right_menu .fas {
-/*   font-size: 22px;
-  cursor: pointer;
-  border-radius: 50%;
-  padding: 10px;
-  background: url('AI3.png');
-  background-repeat: no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 50%; */
-    font-size: 22px;
-    cursor: pointer;
-    color: transparent;
-    border-radius: 50%;
-    padding: 10px;
-    background: url("AI3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
+ font-size: 22px;
+ cursor: pointer;
+ color: transparent;
+ border-radius: 50%;
+ padding: 10px;
+ background: url("AI3.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: 50%;
 }
 
 .right_menu .profile_dd {
@@ -978,31 +969,16 @@ footer strong {
 			});
 		})
 
-        var orderNowButton = document.getElementById("loginid");
-            orderNowButton.addEventListener("click", function () {
+        var loginNowButton = document.getElementById("loginid");
+            loginNowButton.addEventListener("click", function () {
             window.location.href = "login.html";
         });
 
-        var orderNowButton = document.getElementById("registerid");
-            orderNowButton.addEventListener("click", function () {
+        var registerNowButton = document.getElementById("registerid");
+            registerNowButton.addEventListener("click", function () {
             window.location.href = "register.html";
         });
-        var orderNowButton = document.getElementById("homeid");
-            orderNowButton.addEventListener("click", function () {
-            window.location.href = "home.html";
-        });
         
-        function logout() {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "logout.php", true);
-            xhr.onload = function() {
-            if (xhr.status == 200) {
-              alert('Logout sucessfully');
-              window.location.href = 'login.php';
-            }
-        };
-        xhr.send();
-    }
     $(document).ready(function () {
     $(window).scroll(function () {
     if (this.scrollY > 20) {
